@@ -48,7 +48,8 @@
         "video": "coffeecoff.mp4",
         "aspectRatio": "9:16",
         "links": {
-            "github": "https://github.com/KebeliSamet0/Coffee-Coff"
+            "github": "https://github.com/KebeliSamet0/Coffee-Coff",
+            "play": "https://coffeecoff.netlify.app/"
         }
     }
 ]
