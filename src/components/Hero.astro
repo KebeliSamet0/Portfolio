@@ -1,0 +1,50 @@
+---
+---
+
+<section class="min-h-[70vh] md:min-h-[80vh] flex flex-col justify-center items-start reveal">
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 w-full">
+        <!-- Text Content -->
+        <div class="space-y-4 md:space-y-6 flex-1 order-2 md:order-1 text-center md:text-left">
+            <!-- Mobile: centered photo above name -->
+            <div class="flex flex-col items-center md:items-start gap-3">
+                <!-- Mobile-only centered photo -->
+                <div class="relative md:hidden group mb-2">
+                    <div class="absolute -inset-0.5 bg-accent/30 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <img 
+                        src="/profile.jpg" 
+                        alt="Abdüssamet Kebeli" 
+                        class="relative w-32 h-32 rounded-full object-cover border-2 border-accent/30 shadow-lg"
+                        loading="eager"
+                    />
+                </div>
+                <p class="text-accent font-medium tracking-wide text-sm md:text-base">Merhaba Ben</p>
+                <h1 class="text-4xl md:text-7xl font-bold tracking-tight text-white">Abdüssamet Kebeli</h1>
+            </div>
+            <h2 class="text-xl md:text-6xl font-bold text-text-muted">Unity & Game Developer</h2>
+            
+            <p class="max-w-2xl text-sm md:text-xl text-text-muted leading-relaxed pt-2 md:pt-4 mx-auto md:mx-0">
+                Unity ile oyunlar geliştiriyorum ve yaptığım projeleri burada paylaşıyorum. PC ve Mobil platformlar için performanslı ve etkileyici oyun mekanikleri tasarlamaya odaklanıyorum.
+            </p>
+
+            <div class="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4 pt-4 md:pt-8">
+                <a href="#projects" class="px-6 py-3 md:px-8 md:py-4 bg-accent text-background font-semibold rounded-lg hover:bg-white transition-colors duration-300 shadow-[0_0_15px_rgba(0,240,255,0.3)] hover:shadow-[0_0_25px_rgba(0,240,255,0.6)] text-sm md:text-base">
+                    Projelerimi Gör
+                </a>
+                <a href="#contact" class="px-6 py-3 md:px-8 md:py-4 bg-transparent border border-surface text-text-main font-semibold rounded-lg hover:border-accent hover:text-accent transition-colors duration-300 text-sm md:text-base">
+                    İletişim
+                </a>
+            </div>
+        </div>
+
+        <!-- Desktop Profile Photo (hidden on mobile) -->
+        <div class="relative flex-shrink-0 group hidden md:block order-2">
+            <div class="absolute -inset-1 bg-accent/30 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <img 
+                src="/profile.jpg" 
+                alt="Abdüssamet Kebeli" 
+                class="relative w-64 h-64 rounded-2xl object-cover border-2 border-surface group-hover:border-accent/50 transition-all duration-500 shadow-2xl"
+                loading="eager"
+            />
+        </div>
+    </div>
+</section>

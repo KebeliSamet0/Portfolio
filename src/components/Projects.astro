@@ -1,0 +1,17 @@
+---
+import ProjectCard from './ProjectCard.astro';
+import projectsData from '../data/projects.json';
+---
+
+<section id="projects" class="py-24 reveal">
+    <h3 class="text-3xl font-bold mb-12 flex items-center gap-4 text-white">
+        <span class="text-accent text-xl">02.</span> Geliştirdiğim Oyunlar
+        <div class="h-[1px] bg-surface flex-grow ml-4 max-w-xs"></div>
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+        {projectsData.map((project: any) => (
+            <ProjectCard project={project} />
+        ))}
+    </div>
+</section>

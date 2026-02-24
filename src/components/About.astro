@@ -1,0 +1,39 @@
+---
+const skills = [
+  "Unity (C#)", "Gameplay Programming", "OOP & Clean Code", 
+  "URP", "Mobil Geliştirme", "3D Math & Physics", 
+  "UI / UX Entegrasyonu", "Git / GitHub"
+];
+---
+
+<section id="about" class="py-24 reveal">
+    <h3 class="text-3xl font-bold mb-8 flex items-center gap-4 text-white">
+        <span class="text-accent text-xl">01.</span> Hakkımda
+        <div class="h-[1px] bg-surface flex-grow ml-4 max-w-xs"></div>
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="space-y-4 text-text-muted leading-relaxed">
+            <p>
+                Selçuk Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Yaklaşık 6 aydır Unity oyun motoru ile hem PC hem de Mobil platformlar için projeler geliştiriyorum.
+            </p>
+            <p>
+                Gameplay programlama, oyuncu deneyimi ve mekanik tasarımı üzerine yoğunlaşıyorum. OOP prensipleri ve Clean Code yaklaşımını benimseyerek sürdürülebilir oyun sistemleri kurmaya özen gösteriyorum.
+            </p>
+            <p>
+                Konya, Selçuklu'da yaşıyorum. Sürekli yeni şeyler öğrenmeye açığım ve oyun geliştirme alanındaki becerilerimi her projede bir adım daha ileriye taşımayı hedefliyorum.
+            </p>
+        </div>
+
+        <div>
+            <p class="text-text-main font-medium mb-4">Kullandığım teknolojiler ve yetenekler:</p>
+            <ul class="grid grid-cols-2 gap-3">
+                {skills.map(skill => (
+                    <li class="flex items-center gap-2 text-text-muted text-sm">
+                        <span class="text-accent text-xs">▹</span> {skill}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,84 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Abdüssamet Kebeli - Unity Developer Portfolio" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        
+        <!-- OpenGraph -->
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-background text-text-main antialiased selection:bg-accent selection:text-background min-h-screen flex flex-col">
+		<main class="flex-grow w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <slot />
+        </main>
+        
+        <footer class="py-8 text-center text-text-muted text-sm border-t border-surface mt-16">
+            <p>&copy; {new Date().getFullYear()} Abdüssamet Kebeli.</p>
+        </footer>
+	</body>
+</html>
+
+<style is:global>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    /* Scroll Reveal Baseline */
+    .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<script>
+    // Simple intersection observer for scroll reveal animations
+    document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    });
+</script>
