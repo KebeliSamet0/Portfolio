@@ -40,7 +40,7 @@ const gradient = gradients[gradientIndex];
         </div>
         
         <video 
-            src={`/videos/${project.video}`} 
+            src={`${import.meta.env.BASE_URL}videos/${project.video}`} 
             class:list={[
                 "w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300",
                 isMobile ? "object-contain" : "object-cover"

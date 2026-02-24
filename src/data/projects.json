@@ -10,7 +10,7 @@
             "URP"
         ],
         "description": "Selçuk Üniversitesi Bilgisayar Mühendisliği temalı bir aksiyon oyunu. Üzerimize akın eden programlama dillerine karşı savaşarak, final boss olan 'Bu Ders Boğaziçili' ile yüzleşip mezuniyete ulaşıyoruz.",
-        "video": "Bugzone Unity Gameplay.mp4",
+        "video": "bugzone.mp4",
         "aspectRatio": "16:9",
         "links": {
             "github": "https://github.com/KebeliSamet0/BugZone"
@@ -27,7 +27,7 @@
             "3D Math"
         ],
         "description": "Klasik Mayın Tarlası oyununun modern 3D versiyonu. 3D uzayda grid oluşturma ve rekürsif açılma algoritmalarını geliştirdim.",
-        "video": "Minesweeper Unity Gameplay.mp4",
+        "video": "minesweeper.mp4",
         "aspectRatio": "16:9",
         "links": {
             "github": "https://github.com/KebeliSamet0/Minesweeper"
@@ -45,7 +45,7 @@
             "UI/UX"
         ],
         "description": "Sponsor başvurusu için geliştirdiğim hyper-casual mobil oyun. Yukarıdan düşen farklı kahve çeşitlerini bardağa toplayarak 1 dakikada en yüksek skora ulaşmaya çalışıyorsunuz. Her kahvenin farklı puan etkisi var.",
-        "video": "Coffeecoff .mp4",
+        "video": "coffeecoff.mp4",
         "aspectRatio": "9:16",
         "links": {
             "github": "https://github.com/KebeliSamet0/Coffee-Coff"
